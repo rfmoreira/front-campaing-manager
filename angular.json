@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "308d7715-3e5c-41ee-85ed-27d3ebf47a80"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -61,7 +64,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "campaing-manager:build"
+            "browserTarget": "campaing-manager:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {
